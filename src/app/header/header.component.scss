@@ -26,11 +26,11 @@ header{
 .logo{
 
   @include center_center();
-  flex-direction:column;
+  // flex-direction:column;
   //  width:200px;
   // height:200px;
-  margin: 0 auto;
-  height:100%;
+  // margin: 0 auto;
+  // height:100%;
 
   img{
     width:150px;
@@ -40,6 +40,20 @@ header{
   h1{
     font-size:1.5vw;
   }
+}
+
+.navbar{
+  width: 100vw;
+}
+
+.navbarItemsMiddle{
+  display:flex;
+  justify-content:center;
+}
+
+.navbarItemsRight{
+  display:flex;
+  justify-content:center;
 }
 
 .nav-item{
@@ -63,11 +77,16 @@ header{
      }
 }
 
+.nav-link-shop:hover, .nav-link-about:hover, .nav-link-contact:hover{
+  animation: linethrough 2s;
+  animation-fill-mode: forwards;
+}
+
 .nav-link:hover {
   // background-position: left -100% bottom 0;
   // transition: background-position 0.5s;
-  animation: linethrough 2s;
-  animation-fill-mode: forwards;
+  // animation: linethrough 2s;
+  // animation-fill-mode: forwards;
 }
 
 @keyframes linethrough {
@@ -127,6 +146,7 @@ img{
 
 
 
+
 @media(min-width:768px){
   .hamburgerIcon{
     display:none;
@@ -145,8 +165,9 @@ img{
       z-index:100;
       padding-left:10%;
   }
-}
 
+
+}
 // .adminBtn{
 //   margin-left:3rem;
 //   color:darkblue;

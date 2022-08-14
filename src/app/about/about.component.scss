@@ -59,13 +59,23 @@ h3{
   justify-content:center;
   align-items:center;
 
-  .aboutusImage{
+  .aboutus_imageContainer{
 
-     width:100%;
-     height:70%;
-     object-fit:cover;
+   height:50vh;
+
+
+    .aboutusImage{
+
+      width:100%;
+      height:100%;
+      object-fit:cover;
+
+   }
+
 
   }
+
+
 }
 
 .ourmission{
@@ -156,8 +166,35 @@ h3{
   }
 
 
+@media(min-width:768px){
+
+  .aboutus{
+
+   .aboutus_imageContainer{
+
+    height:50vh;
+
+}
+
+  }
 
 
+}
+
+@media(min-width:997px){
+
+  .aboutus{
+
+   .aboutus_imageContainer{
+
+    height:60vh;
+
+}
+
+  }
+
+
+}
 
 
 

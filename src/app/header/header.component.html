@@ -13,36 +13,47 @@
         </div> -->
 
         <div class="row navContainer">
-          <div class="logo d-none d-md-block col-3 ">
+          <!-- <div class="logo d-none d-md-block col-3 ">
             <a routerLink="/">
             <img class="logo" alt="Green Around The World Logo" [src]="logo">
-            <!-- <h1 class="headerBrandName">{{name}}</h1> -->
+
             </a>
-          </div>
+          </div> -->
           <nav class=" col-8 navbar navbar-expand-md navbar-light">
 
             <div class="container-fluid">
               <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                <div class="logo d-none d-md-block col-3">
+                  <a routerLink="/">
+                  <img class="logo" alt="Green Around The World Logo" [src]="logo">
+                  <!-- <h1 class="headerBrandName">{{name}}</h1> -->
+                  </a>
+                </div>
+                <ul class="navbarItemsMiddle navbar-nav me-auto mb-2 mb-lg-0 col-6">
 
                   <li class="nav-item">
-                    <a class="nav-link active" routerLink="/products">Shop</a>
+                    <a class="nav-link nav-link-shop active" routerLink="/products">Shop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+                    <a class="nav-link active nav-link-about" aria-current="page" routerLink="/about">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Contact</a>
+                    <a class="nav-link active nav-link-contact" href="#">Contact</a>
                   </li>
                 </ul>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class=" col-3 navbarItemsRight navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#"><img src='../../assets/shoppingbagicon.svg'></a>
+                    <a class="nav-link active position-relative" routerLink="cart"><img src='../../assets/shoppingbagicon.svg'>  <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">
+                      <!-- {{cartQty}} -->0
+                      <span class="visually-hidden">unread messages</span>
+                      </span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#"><img src='../../assets/profileicon.svg'></a>
+                    <a class="nav-link active" href="#"><img src='../../assets/profileicon.svg'>
+
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="#"><img src='../../assets/searchicon.svg'></a>
