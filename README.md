@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <img width="500" alt="Green around the world homepage image" src="https://user-images.githubusercontent.com/70562492/211481983-ba3655d8-6e9c-4ac8-afa3-c4b6e74fa0b8.png">
 
 ## About the project
+<img src="https://media.giphy.com/media/vkcA2PX1clqIegLXER/giphy.gif" width="500"/>
 My work involved both client-side and server-side development as well as designing a logo and branding.
 
 ## Technologies 
